@@ -1,1 +1,28 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.carousel-inner{
+    height: 90vh;
+}
+nav{
+    height: 10vh;
+}
+.carousel-item{
+    height: 90vh;
+}
+.h1{
+    font-size: 5em;
+    text-shadow: 2px 2px 2px #232323, 2px 2px 2px #303030,2px 2px 2px #484848;
+}
+.carousel-item p{
+    text-shadow: 2px 2px 2px #232323, 2px 2px 2px #303030,2px 2px 2px #484848;
+}
+.carousel-caption{
+    animation: fadein 1.7s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+    to{
+        opacity: 1;
+    }
+}
