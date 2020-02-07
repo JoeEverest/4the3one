@@ -5,5 +5,38 @@
     border: 1px solid #aaaaaa;
     border-left: none;
     border-right: none;
-    margin: 20px 0;
+    border-top: none;
+    margin: 10px 0;
+}
+@keyframes enlarge {
+    from {
+        margin-left: 0;
+        /* transform: translateX(0); */
+    }
+    to{
+        margin-left: 50px;
+        /* transform: translateX(10vw); */
+    }
+}
+.item:hover .text{
+    animation: enlarge 0.5s;
+    animation-fill-mode: forwards;
+}
+a:hover{
+    text-decoration: none;
+}
+.image{
+    color: white;
+    height: 40vh;
+    background-image: url("../images/helena-lopes-UR2sbN3SuKE-unsplash.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+.image2{
+    background-image: url("../images/zany-jadraque-g2xKEEyd-_I-unsplash.jpg");
+}
+.image h1{
+    padding: 20vh;
+    font-size: xxx-large;
+    text-shadow: 2px 2px 2px #434343, 2px 2px 2px #585858;
 }

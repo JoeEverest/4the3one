@@ -12,14 +12,11 @@ if (isset($_GET['id'])) {
     header("Location: dashboard.php");
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paths in: <?php echo $name ?></title>
-</head>
-<body>
+<?php include("nav.php"); ?>
+<div class="image image2">
+    <h1>SELECT YOUR FIELD</h1>
+</div>
+<div class="container">
     <?php
     $getCategory = "SELECT * FROM paths WHERE category_id = '$categoryid' ORDER BY id ASC";
     $getCategory =  mysqli_query($connect, $getCategory);
@@ -27,11 +24,15 @@ if (isset($_GET['id'])) {
         $id = $row['id'];
         $name = $row['name'];
     ?>
-    <div class="item">
-        <a href="content.php?id=<?php echo $id; ?>"><?php echo $name; ?></a>
-    </div>
+    <a href="content.php?id=<?php echo $id; ?>">
+        <div class="item">
+            <span class="text"><?php echo $name; ?></span>
+        </div>
+    </a>
     <?php
     }
     ?>
+</div>
+    
 </body>
 </html>
