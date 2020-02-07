@@ -12,9 +12,12 @@ if (isset($_GET['id'])) {
     header("Location: dashboard.php");
 }
 ?>
+<?php include("header.php");?>
+
+<title>Paths in: <?php echo $name ?></title>
 <?php include("nav.php"); ?>
 <div class="image image2">
-    <h1>SELECT YOUR FIELD</h1>
+    <h1>Choose your Path</h1>
 </div>
 <div class="container">
     <?php

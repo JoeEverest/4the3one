@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="assets/css/ebs-contact-form.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Athena</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-sm navbar-light justify-content-end">
     <a class="navbar-brand" href="#">
         <img src="assets/images/Eye_of_Horus_Right.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        Home
+        Athena
     </a>
     <a href="login.php" class="btn ml-auto mr-1">Login</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">

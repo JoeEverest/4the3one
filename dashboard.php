@@ -1,7 +1,12 @@
 <?php
 include("includes/config.php");
 ?>
-<?php include("nav.php"); ?>
+<?php
+include("header.php");?>
+<title>Dashboard</title>
+<?php
+include("nav.php");
+?>
 <div class="image">
     <h1>SELECT YOUR FIELD</h1>
 </div>
@@ -21,9 +26,5 @@ include("includes/config.php");
     </a>
     <?php
     }
+    include("footer.php");
     ?>
-</div>
-
-    
-</body>
-</html>
