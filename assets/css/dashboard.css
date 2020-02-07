@@ -1,0 +1,9 @@
+.item{
+    width: 100%;
+    padding: 20px;
+    font-size: large;
+    border: 1px solid #aaaaaa;
+    border-left: none;
+    border-right: none;
+    margin: 20px 0;
+}

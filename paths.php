@@ -2,8 +2,14 @@
 include("includes/config.php");
 if (isset($_GET['id'])) {
     $categoryid = $_GET['id'];
+    $getfield = "SELECT * FROM fields WHERE id = '$categoryid' ORDER BY id ASC";
+    $getfield =  mysqli_query($connect, $getfield);
+    while ($rq = mysqli_fetch_array($getfield)) {
+        $id = $rq['id'];
+        $name = $rq['name'];
+    }
 }else{
-    header("Location: dashbosrd.php");
+    header("Location: dashboard.php");
 }
 ?>
 <!DOCTYPE html>
@@ -11,7 +17,7 @@ if (isset($_GET['id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Paths in: <?php echo $name ?></title>
 </head>
 <body>
     <?php
@@ -21,7 +27,9 @@ if (isset($_GET['id'])) {
         $id = $row['id'];
         $name = $row['name'];
     ?>
-    <div class="item"><a href="content.php?id=<?php echo $id; ?>"><?php echo $name; ?></a></div>
+    <div class="item">
+        <a href="content.php?id=<?php echo $id; ?>"><?php echo $name; ?></a>
+    </div>
     <?php
     }
     ?>
