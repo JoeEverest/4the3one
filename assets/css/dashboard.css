@@ -35,8 +35,14 @@ a:hover{
 .image2{
     background-image: url("../images/zany-jadraque-g2xKEEyd-_I-unsplash.jpg");
 }
+.image3{
+    background-image: url("../images/marvin-meyer-SYTO3xs06fU-unsplash.jpg");
+}
 .image h1{
     padding: 20vh;
     font-size: xxx-large;
     text-shadow: 2px 2px 2px #434343, 2px 2px 2px #585858;
+}
+video{
+    margin: auto;
 }

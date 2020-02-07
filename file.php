@@ -1,15 +1,24 @@
 <?php include("header.php");?>
 <title>Course Content</title>
-<?php include("nav.php"); ?>
-<div class="container">
 <?php
+include("nav.php");
 $dir    = $_GET['id'].'/';
+$title    = $_GET['title'];
+
 $files = scandir($dir);
 
 // print_r($files);
 
 $arrlength = count($files);
 ?>
+<div class="image image3">
+    <h1><?php echo $title; ?></h1>
+</div><br>
+<div class="container">
+<?php
+
+?>
+
 <ul>
 <?php
 
