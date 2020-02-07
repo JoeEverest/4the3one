@@ -4,6 +4,10 @@
 nav{
     height: 10vh;
 }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
 .carousel-item{
     height: 90vh;
 }
