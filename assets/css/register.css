@@ -1,0 +1,12 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #232323;
+    color: white;
+}
+.formHolder{
+    margin: auto;
+    width: 50vw;
+    margin-top: 20vh;
+}
