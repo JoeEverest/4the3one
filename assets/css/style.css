@@ -37,7 +37,7 @@ nav{
 .about{
     width: 100%;
 }
-.about h2, .about hr{
+.about h2{
     margin-top: 20px;
     display: flex;
     flex-direction: row-reverse;
